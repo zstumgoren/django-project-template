@@ -9,8 +9,8 @@ WSGI_APPLICATION = 'config.prod.{{ project_name }}_wsgi'
 # Default to sqlite
 DATABASES = {
     'default': {
-        'ENGINE': os.path.join(PROJECT_ROOT, '{{ project_name }}.db'), #'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
+        'ENGINE': 'django.db.backends.sqlite3', #'django.db.backends.postgresql_psycopg2',
+        'NAME': os.path.join(PROJECT_ROOT, '{{ project_name }}.db'),
         'USER':  '',
         'PASSWORD': '',
         'HOST': '',
