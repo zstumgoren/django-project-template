@@ -9,7 +9,7 @@ ROOT_URLCONF = 'config.dev.urls'
 
 WSGI_APPLICATION = 'config.dev.{{ project_name }}_wsgi.application'
 
-# DB Settings stored in a file outside version control
+# DB settings stored in a file outside version control
 try:
     from config.dev.db_settings import DATABASES
 except ImportError:
@@ -20,7 +20,7 @@ except ImportError:
 if 'test' in sys.argv:
     DATABASES['default'] = {'ENGINE':'django.db.backends.sqlite3'}
     FIXTURE_DIRS = (
-        PROJECT_ROOT + '/apps/election_results/ap/tests/fixtures',
+        PROJECT_ROOT + 'tests/fixtures',
     )
     SOUTH_TESTS_MIGRATE = False
 """
