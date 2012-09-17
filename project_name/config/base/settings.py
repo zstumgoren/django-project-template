@@ -11,7 +11,6 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-SECRET_KEY = '{{ secret_key }}'
 TIME_ZONE = 'America/New_York'
 LANGUAGE_CODE = 'en-us'
 SITE_ID = 1

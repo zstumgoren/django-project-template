@@ -9,9 +9,9 @@ ROOT_URLCONF = 'config.dev.urls'
 
 WSGI_APPLICATION = 'config.dev.{{ project_name }}_wsgi.application'
 
-# DB settings stored in a file outside version control
+# DB settings and secret key stored in a file outside version control
 try:
-    from config.dev.db_settings import DATABASES
+    from config.dev.local_settings import *
 except ImportError:
     pass
 

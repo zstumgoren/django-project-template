@@ -9,3 +9,5 @@ DATABASES = {
         'PORT': '',
     }
 }
+
+SECRET_KEY = '{{ secret_key }}'
