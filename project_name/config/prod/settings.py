@@ -19,5 +19,3 @@ INSTALLED_APPS += (
     'test_utils',
 )
 
-
-SECRET_KEY = '{{ secret_key }}'
